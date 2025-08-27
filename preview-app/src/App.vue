@@ -4,7 +4,7 @@ import PreviewEditor from './components/PreviewEditor.vue'
 import ContentsListModal from './components/ContentsListModal.vue'
 import { usePreview } from './composables/usePreview'
 import PreviewToolbar from './components/PreviewToolbar.vue'
-import CommitPreviewModal from './components/CommitPreviewModal.vue'
+// import CommitPreviewModal from './components/CommitPreviewModal.vue'
 
 const { host, draftFile, draftFiles } = usePreview()
 

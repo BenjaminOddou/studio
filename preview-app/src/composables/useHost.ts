@@ -1,9 +1,9 @@
 import { ref, onBeforeMount } from 'vue'
 import { ensure } from '../utils/ensure'
-import { DatabaseItem } from '../types'
+import type { DatabaseItem } from '../types'
 import type { ContentDatabaseAdapter, ContentProvide } from '../types/content'
 
-import { NuxtApp } from 'nuxt/app'
+import type { NuxtApp } from 'nuxt/app'
 import { explainDraft } from '../utils/collections'
 import { kebabCase } from 'lodash'
 

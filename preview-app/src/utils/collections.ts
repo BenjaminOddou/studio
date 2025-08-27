@@ -2,7 +2,7 @@ import type { CollectionInfo, CollectionSource, Draft07, ParsedContentFile } fro
 import { hash } from 'ohash'
 import { pathMetaTransform } from './path-meta'
 // import { collections } from '#content/preview'
-import type { ContentDraft, DatabaseItem, DraftFileItem } from '../types'
+import type { DatabaseItem } from '../types'
 import { minimatch } from 'minimatch'
 import { join } from 'pathe'
 import { omit } from './object'

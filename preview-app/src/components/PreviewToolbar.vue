@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import UAvatar from '@nuxt/ui/components/Avatar.vue'
-import { useUserSession } from '#imports'
+// import { useUserSession } from '#imports'
 
 const { user, clear: logOut } = useUserSession()
 

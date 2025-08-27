@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { createStorage } from 'unstorage'
 import indexedDbDriver from 'unstorage/drivers/indexedb'
-import { DatabaseItem, DraftFileItem } from '../types'
+import type { DatabaseItem, DraftFileItem } from '../types'
 import { explainDraft, generateRecordUpdate, createCollectionDocument, generateRecordDeletion } from '../utils/collections'
 import { useHost } from './useHost'
 import { useGit } from './useGit'
@@ -22,7 +22,7 @@ export function usePreview() {
     owner: 'owner',
     repo: 'repo',
     branch: 'main',
-    token: 'ghp_...',
+    token: '',
     authorName: 'Name',
     authorEmail: 'email@example.com',
   })
