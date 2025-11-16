@@ -33,6 +33,11 @@ interface ModuleOptions {
        * @default process.env.STUDIO_GITHUB_CLIENT_SECRET
        */
       clientSecret?: string
+      /**
+       * A GitHub Personal Access Token (PAT) to bypass OAuth.
+       * @default process.env.STUDIO_GITHUB_PAT
+       */
+      pat?: string
     }
   }
   /**
@@ -116,6 +121,7 @@ export default defineNuxtModule<ModuleOptions>({
       github: {
         clientId: process.env.STUDIO_GITHUB_CLIENT_ID,
         clientSecret: process.env.STUDIO_GITHUB_CLIENT_SECRET,
+        pat: process.env.STUDIO_GITHUB_PAT,
       },
     },
     i18n: {
